@@ -1,0 +1,6 @@
+# h1 absで絶対値を取得できる
+
+~~~
+n = gets.to_i
+puts n.abs
+~~~
