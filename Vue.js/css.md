@@ -71,3 +71,5 @@ v-forだとエラーがでる
   <component :is="myComponent"></component>
 </transition>
 ```
+# 8つjs
+
