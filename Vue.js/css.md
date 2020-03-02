@@ -54,3 +54,20 @@ fade-enter {
 ```js
 <transition enter-active-class="animated bounce" leave-active-class="animated shake" appear>
 ```
+# v-if
+同じタグ名を使うときはkey属性をつける  
+v-forだとエラーがでる
+```js
+<transition name="fade">
+  <p v-if="show" key="bye">さようなら</p>
+  <p v-if="!show" key="hello">こんにちは</p>
+</transition>
+```
+# mode="out-in"
+出て入る　複数の要素を切り替えるtransitionにはmode属性をつける
+# コンポーネントにアニメーション
+```js
+<transition name="fade" mode="out-in">
+  <component :is="myComponent"></component>
+</transition>
+```
