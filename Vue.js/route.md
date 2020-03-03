@@ -26,3 +26,32 @@ export default {
   props: ["id"],
 ```
 propsを使うことで同じ内容を他のページにも表示させることができるようになる
+# scrollBehavior
+一つのページでidの部分までスクロールさせたい時に使用する
+## 引数を3つとるto,from,savePosition
+toはhashで場所指定する時に使用する
+```js
+if (to.hash) {
+  position = {
+    selector: to.hash,
+    offset: { x: 0, y: 100 }
+  };
+}
+```
+savePositionは前回のポジションをキープしたいときに使う
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
