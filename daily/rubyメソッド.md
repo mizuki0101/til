@@ -59,3 +59,32 @@ p [*1..5].to_a
 [1, 2, 3, 4, 5]
 
 ```
+# 多重代入で残りを配列として受け取る
+```ruby
+e, *f = 100,200,300
+p e
+p f
+
+=>
+100
+[200, 300]
+```
+# 文字列配列に変換する
+```ruby
+a = "abcd".chars
+p a
+
+=>
+"a", "b", "c", "d"]
+```
+# 配列の一部を変更する
+```rub
+a = Array.new(5) {'test'}
+str = a[0]
+p str.upcase
+p a
+
+=>
+"TEST"
+["test", "test", "test", "test", "test"]
+```
