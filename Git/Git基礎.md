@@ -6,3 +6,11 @@
 ## gint init の取り消し
 
 - `rm -rf .git`
+
+## git 基本コマンド
+
+```ruby
+git add [ファイル名] //追加
+git commit -a -m "任意のコメント"  //コミット (-aオプションは変更を自動検出してくれる)
+git push origin master  //masterを更新
+```
