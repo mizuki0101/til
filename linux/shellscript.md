@@ -42,3 +42,28 @@ $
 $ ./if
 BBB
 ```
+
+## case 文
+
+```
+$ cat case
+#!/bin/bash
+
+x=BBB
+case $x in
+     AAA)
+          echo "AAA"
+          ;;
+     BBB)
+          echo "BBB"
+          ;;
+     CCC)
+          echo "CCC"
+          ;;
+     *)
+          ;;
+esac
+$
+$ ./case
+BBB
+```
