@@ -24,3 +24,21 @@ echo "8 - var = $var"
 echo "9 - ${var:?StandardErrorMessage}"
 echo "10 - var = ${var}"
 ```
+
+# if 文
+
+```
+利用例
+$ cat if
+#!/bin/bash
+
+if [ 1 -ge 2 ]
+ then
+  echo "AAA"
+ else
+  echo "BBB"
+fi
+$
+$ ./if
+BBB
+```
