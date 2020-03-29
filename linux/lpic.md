@@ -2,3 +2,7 @@
 
 - lsmod
 - cat /proc/modules
+
+# パッケージ管理
+- dpkg
+- apt
